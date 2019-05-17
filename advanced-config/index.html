@@ -1,0 +1,457 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.2.0">
+    
+    
+      
+        <title>Advanced Configuration - K8up</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.750b69bd.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#advanced-config" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="K8up" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              K8up
+            </span>
+            <span class="md-header-nav__topic">
+              Advanced Configuration
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="K8up" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    K8up
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Advanced Configuration
+      </label>
+    
+    <a href="./" title="Advanced Configuration" class="md-nav__link md-nav__link--active">
+      Advanced Configuration
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#environment-variables" title="Environment variables" class="md-nav__link">
+    Environment variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#global-settings" title="Global settings" class="md-nav__link">
+    Global settings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-installation" title="Manual Installation" class="md-nav__link">
+    Manual Installation
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../restore/" title="Restore" class="md-nav__link">
+      Restore
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../object-specifications/" title="Object Specifications" class="md-nav__link">
+      Object Specifications
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#environment-variables" title="Environment variables" class="md-nav__link">
+    Environment variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#global-settings" title="Global settings" class="md-nav__link">
+    Global settings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-installation" title="Manual Installation" class="md-nav__link">
+    Manual Installation
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="advanced-config">Advanced config</h1>
+<p>The operator has two ways for configuration:</p>
+<ul>
+<li>Per namespace backups. Optimal for shared clusters</li>
+<li>Global settings with namespaced schedules. Optimal for private clusters</li>
+</ul>
+<h2 id="environment-variables">Environment variables</h2>
+<ul>
+<li><code>BACKUP_IMAGE</code> URL for the restic image, default: <code>172.30.1.1:5000/myproject/restic</code></li>
+<li><code>BACKUP_ANNOTATION</code> the annotation to be used for filtering, default: <code>appuio.ch/backup</code></li>
+<li><code>BACKUP_CHECKSCHEDULE</code> the default check schedule, default: <code>0 0 * * 0</code></li>
+<li><code>BACKUP_PODFILTER</code> the filter used to find the backup pods, default: <code>backupPod=true</code></li>
+<li><code>BACKUP_DATAPATH</code> where the PVCs should get mounted in the container, default <code>/data</code></li>
+<li><code>BACKUP_JOBNAME</code> names for the backup job objects in OpenShift, default: <code>backupjob</code></li>
+<li><code>BACKUP_PODNAME</code> names for the backup pod objects in OpenShift, default: <code>backupjob-pod</code></li>
+<li><code>BACKUP_RESTARTPOLICY</code> set the RestartPolicy for the backup jobs. According to the <a href="https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/">docs</a> this should be <code>OnFailure</code> for jobs that terminate, default: <code>OnFailure</code></li>
+<li><code>BACKUP_METRICBIND</code> set the bind address for the prometheus endpoint, default: <code>:8080</code></li>
+<li><code>BACKUP_PROMURL</code> set the operator wide default prometheus push gateway, default <code>http://127.0.0.1/</code></li>
+<li><code>BACKUP_BACKUPCOMMANDANNOTATION</code> set the annotation name where the backup commands are stored, default <code>appuio.ch/backupcommand</code></li>
+<li><code>BACKUP_PODEXECROLENAME</code> set the rolename that should be used for pod command execution, default <code>pod-executor</code></li>
+<li><code>BACKUP_PODEXECACCOUNTNAME</code> set the service account name that should be used for the pod command execution, default: <code>pod-executor</code></li>
+<li><code>BACKUP_GLOBALACCESSKEYID</code> set the S3 access key id to be used globaly</li>
+<li><code>BACKUP_GLOBALSECRETACCESSKEY</code> set the S3 secret access key to be used globaly</li>
+<li><code>BACKUP_GLOBALREPOPASSWORD</code> set the restic repository password to be used globaly</li>
+<li><code>BACKUP_GLOBALKEEPJOBS</code> set the count of jobs to keep globally</li>
+<li><code>BACKUP_GLOBALS3ENDPOINT</code> set the S3 endpoint to be used globally</li>
+<li><code>BACKUP_GLOBALS3BUCKET</code> set the S3 bucket to be used globally</li>
+<li><code>BACKUP_GLOBALSTATSURL</code> set the URL for wrestic to post additional metrics gloablly, default <code>""</code></li>
+<li><code>BACKUP_GLOBALRESTORES3BUCKET</code> set the global restore S3 bucket for restores</li>
+<li><code>BACKUP_GLOBALRESTORES3ENDPOINT</code> set the global restore S3 endpoint for the restores (needs the scheme [http/https]</li>
+<li><code>BACKUP_GLOBALRESTORES3ACCESKEYID</code> set the global resotre S3 accessKeyID for restores</li>
+<li><code>BACKUP_GLOBALRESTORES3SECRETACCESSKEY</code> set the global restore S3 SecretAccessKey for restores</li>
+</ul>
+<p>You only need to adjust <code>BACKUP_IMAGE</code> everything else can be left default.</p>
+<h2 id="global-settings">Global settings</h2>
+<p>Each variable starting with <code>BACKUP_GLOBAL*</code> is used to configure a global default for all namespaces. F.e. if you configure the S3 bucket and credentials you won't have to specify them in the schedule or backup CRDs.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is possible to overwrite the global settings. Simply set the specific configuration in the CRD and it will use that instead.</p>
+</div>
+<h2 id="manual-installation">Manual Installation</h2>
+<p>All required definitions for the installation are located at <code>manifest/install/</code>:</p>
+<pre><code class="bash">kubectl apply -f manifest/install/
+</code></pre>
+
+<p>Please be aware that these manifests are intended for dev and as examples. They are not the official way to install the operator in production. For this we provide a helm chart at https://github.com/appuio/charts.
+You may need to adjust the namespaces in the manifests. There are various other examples under <code>manifest/examples/</code>.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../getting-started/" title="Getting Started" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Getting Started
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../restore/" title="Restore" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Restore
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.39abc4af.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

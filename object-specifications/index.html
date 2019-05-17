@@ -1,0 +1,845 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.2.0">
+    
+    
+      
+        <title>Object Specifications - K8up</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.750b69bd.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#object-specifications" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="K8up" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              K8up
+            </span>
+            <span class="md-header-nav__topic">
+              Object Specifications
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="K8up" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    K8up
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../advanced-config/" title="Advanced Configuration" class="md-nav__link">
+      Advanced Configuration
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../restore/" title="Restore" class="md-nav__link">
+      Restore
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Object Specifications
+      </label>
+    
+    <a href="./" title="Object Specifications" class="md-nav__link md-nav__link--active">
+      Object Specifications
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#schedule" title="Schedule" class="md-nav__link">
+    Schedule
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings" title="Settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restore" title="Restore" class="md-nav__link">
+    Restore
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings_1" title="Settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#archive" title="Archive" class="md-nav__link">
+    Archive
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings_2" title="Settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backup" title="Backup" class="md-nav__link">
+    Backup
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings_3" title="Settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check" title="Check" class="md-nav__link">
+    Check
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings_4" title="Settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prune" title="Prune" class="md-nav__link">
+    Prune
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings_5" title="Settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backend" title="Backend" class="md-nav__link">
+    Backend
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings_6" title="Settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#schedule" title="Schedule" class="md-nav__link">
+    Schedule
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings" title="Settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restore" title="Restore" class="md-nav__link">
+    Restore
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings_1" title="Settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#archive" title="Archive" class="md-nav__link">
+    Archive
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings_2" title="Settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backup" title="Backup" class="md-nav__link">
+    Backup
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings_3" title="Settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check" title="Check" class="md-nav__link">
+    Check
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings_4" title="Settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prune" title="Prune" class="md-nav__link">
+    Prune
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings_5" title="Settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backend" title="Backend" class="md-nav__link">
+    Backend
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings_6" title="Settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="object-specifications">Object Specifications</h1>
+<p>The K8up operator includes various CRDs which get added to the cluster. Here We'll explain them in more detail.</p>
+<h2 id="schedule">Schedule</h2>
+<p>With the schedule CRD it is possible to put all other CRDs on a schedule.</p>
+<pre><code class="yaml">apiVersion: backup.appuio.ch/v1alpha1
+kind: Schedule
+metadata:
+  name: schedule-test
+spec:
+  backend:
+    s3:
+      endpoint: http://10.144.1.224:9000
+      bucket: baas
+      accessKeyIDSecretRef:
+        name: backup-credentials
+        key: username
+      secretAccessKeySecretRef:
+        name: backup-credentials
+        key: password
+      repoPasswordSecretRef:
+        name: backup-repo
+        key: password
+  archive:
+    schedule: '0 * * * *'
+    restoreMethod:
+      s3:
+        endpoint: http://10.144.1.224:9000
+        bucket: restoremini
+        accessKeyIDSecretRef:
+          name: backup-credentials
+          key: username
+        secretAccessKeySecretRef:
+          name: backup-credentials
+          key: password
+  backup:
+    schedule: '* * * * *'
+    keepJobs: 4
+    promURL: http://10.144.1.224:9000
+  check:
+    schedule: '*/5 * * * *'
+    promURL: http://10.144.1.224:9000
+  prune:
+    schedule: '*/2 * * * *'
+    retention:
+      keepLast: 5
+      keepDaily: 14
+</code></pre>
+
+<h3 id="settings">Settings</h3>
+<ul>
+<li><code>archive</code>: see archive for further explaination</li>
+<li><code>backend</code>: see backend for further explanaition</li>
+<li><code>check</code>: see check for further explanaition</li>
+<li><code>prune</code>: see prune for further explanaition</li>
+</ul>
+<h2 id="restore">Restore</h2>
+<p>It's now possible to define various restore jobs. Currently these kinds of restores are supported:</p>
+<ul>
+<li>To a PVC</li>
+<li>To S3 as tar.gz</li>
+</ul>
+<p>Example for a restore to a PVC:</p>
+<pre><code class="yaml">apiVersion: backup.appuio.ch/v1alpha1
+kind: Restore
+metadata:
+  name: restore-test
+
+spec:
+  repoPasswordSecretRef:
+    name: backup-repo
+    key: password
+  restoreMethod:
+    folder:
+      claimName: restore
+
+  backend:
+    s3:
+      endpoint: http://10.144.1.224:9000
+      bucket: baas
+      accessKeyIDSecretRef:
+        name: backup-credentials
+        key: username
+      secretAccessKeySecretRef:
+        name: backup-credentials
+        key: password
+</code></pre>
+
+<p>This will restore the latest snapshot from <code>http://10.144.1.224:9000</code> to the PVC with the name <code>restore</code>.</p>
+<h3 id="settings_1">Settings</h3>
+<p>TODO:</p>
+<h2 id="archive">Archive</h2>
+<p>The archive CRD will take the latest snapshots from each namespace/project in the repository. Thus you should only run one schedule per repository for archival as there's a chance that you'll archive snapshots more than once.</p>
+<pre><code class="yaml">apiVersion: backup.appuio.ch/v1alpha1
+kind: Archive
+metadata:
+  name: archive-test
+spec:
+  repoPasswordSecretRef:
+    name: backup-repo
+    key: password
+  restoreMethod:
+    s3:
+      endpoint: http://10.144.1.224:9000
+      bucket: restoremini
+      accessKeyIDSecretRef:
+        name: backup-credentials
+        key: username
+      secretAccessKeySecretRef:
+        name: backup-credentials
+        key: password
+  backend:
+    s3:
+      endpoint: http://10.144.1.224:9000
+      bucket: baas
+      accessKeyIDSecretRef:
+        name: backup-credentials
+        key: username
+      secretAccessKeySecretRef:
+        name: backup-credentials
+        key: password
+</code></pre>
+
+<h3 id="settings_2">Settings</h3>
+<p>TODO:</p>
+<h2 id="backup">Backup</h2>
+<p>This will trigger a single backup.</p>
+<pre><code class="yaml">apiVersion: backup.appuio.ch/v1alpha1
+kind: Backup
+metadata:
+  name: baas-test
+spec:
+  keepJobs: 4
+  backend:
+    s3:
+      endpoint: http://10.144.1.224:9000
+      bucket: baas
+      accessKeyIDSecretRef:
+        name: backup-credentials
+        key: username
+      secretAccessKeySecretRef:
+        name: backup-credentials
+        key: password
+  retention:
+    keepLast: 5
+    keepDaily: 14
+  promURL: http://10.144.1.224:9000
+  repoPasswordSecretRef:
+    name: backup-repo
+    key: password
+</code></pre>
+
+<h3 id="settings_3">Settings</h3>
+<p>TODO:</p>
+<h2 id="check">Check</h2>
+<p>This will trigger a single check run on the repository.</p>
+<pre><code class="yaml">apiVersion: backup.appuio.ch/v1alpha1
+kind: Check
+metadata:
+  name: check-test
+spec:
+  backend:
+    s3:
+      endpoint: http://10.144.1.224:9000
+      bucket: baas
+      accessKeyIDSecretRef:
+        name: backup-credentials
+        key: username
+      secretAccessKeySecretRef:
+        name: backup-credentials
+        key: password
+  promURL: http://10.144.1.224:9000
+  repoPasswordSecretRef:
+    name: backup-repo
+    key: password
+
+</code></pre>
+
+<h3 id="settings_4">Settings</h3>
+<p>TODO:</p>
+<h2 id="prune">Prune</h2>
+<p>This will trigger a single prune run and delete the snapshots according to the defined retention rules. This one needs to run exclusively on the repository. No other jobs must run on the same repository while this one is still running. The operator ensures that the prune will run exclusively on the repository.</p>
+<pre><code class="yaml">apiVersion: backup.appuio.ch/v1alpha1
+kind: Prune
+metadata:
+  name: prune-test
+spec:
+  retention:
+    keepLast: 5
+    keepDaily: 14
+  backend:
+    s3:
+      endpoint: http://10.144.1.224:9000
+      bucket: baas
+      accessKeyIDSecretRef:
+        name: backup-credentials
+        key: username
+      secretAccessKeySecretRef:
+        name: backup-credentials
+        key: password
+      repoPasswordSecretRef:
+        name: backup-repo
+        key: password
+  promURL: http://10.144.1.224:9000
+</code></pre>
+
+<h3 id="settings_5">Settings</h3>
+<p>TODO:</p>
+<h2 id="backend">Backend</h2>
+<p>TODO:</p>
+<h3 id="settings_6">Settings</h3>
+<p>TODO:</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../restore/" title="Restore" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Restore
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.39abc4af.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
